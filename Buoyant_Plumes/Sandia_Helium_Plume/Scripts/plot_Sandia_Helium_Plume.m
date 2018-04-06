@@ -10,7 +10,7 @@ addpath '../../../Utilities/'
 
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
-pltdir = '/Volumes/rmcdermo/plots_helium_paper/';
+pltdir = '/Users/randy/tmp_macfp_plots_2/';
 plot_style
 
 % read exp data configuration file
@@ -133,26 +133,39 @@ for i=2:n_plots
 
                         if strcmp(Exp_Plot_Type,'linear')
                             %H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'LineWidth',Line_Width,'MarkerSize',Marker_Size);
-                            if(n_key==2)
+                            %if(n_key==2) % IRSN
+                            if(strcmp(inst{n},'IRSN'))    
+                               Line_Width  = 4;
+                               Color = [255,69,0]/255;
+                               Cmp_Plot_Style = '--';
+                            %elseif(n_key==3) % NIST
+                            elseif(strcmp(inst{n},'NIST'))
                                Line_Width  = 4;
                                Color = 'k';
-                               Cmp_Plot_Style = '-';
-                            elseif(n_key==3)
-                               Line_Width  = 4;
-                               Color = 'r';
                                Cmp_Plot_Style = '--';
-                            elseif(n_key==4)
+                            %elseif(n_key==4) % UGent
+                            elseif(strcmp(inst{n},'UGent'))
                                Line_Width  = 4;
                                Color = 'b';
-                               Cmp_Plot_Style = '-.';
-                            elseif(n_key==5)
+                               Cmp_Plot_Style = '--';
+                            %elseif(n_key==5) % SNL coarse
+                            elseif(strcmp(inst{n},'ZSNLcoarse'))
                                Line_Width  = 4;
-                               Color = [0.5 0 0.5];
-                               Cmp_Plot_Style = ':';
-                            elseif(n_key==6)
+                               Color = [0 0.5 0];
+                               Cmp_Plot_Style = '--';
+                            %elseif(n_key==6) % SNL fine
+                            elseif(strcmp(inst{n},'ZSNLfine'))
                                Line_Width  = 4;
                                Color = [0 0.5 0];
                                Cmp_Plot_Style = ':';
+                            elseif(strcmp(inst{n},'FMGlobal'))
+                               Line_Width  = 4;
+                               Color = [0.5 0 0.5];
+                               Cmp_Plot_Style = '--';
+                            elseif(strcmp(inst{n},'UMD'))
+                               Line_Width  = 4;
+                               Color = 'r';
+                               Cmp_Plot_Style = '--';
                             end
                             H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'LineWidth',Line_Width,'Color',Color);
                         elseif strcmp(Exp_Plot_Type,'loglog')
