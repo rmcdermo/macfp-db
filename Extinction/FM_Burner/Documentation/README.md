@@ -66,8 +66,6 @@ These data are located in [FM_Burner/Experimental_Data/FM_Burner_dataset_update_
 
 #### References
 
-References:
-
 [1] D. Zeng, P. Chatterjee, Y. Wang, The effect of oxygen depletion on soot and thermal radiation in buoyant turbulent diffusion flames, Proc Combust Inst 37 (2019) 825-832. doi: https://doi.org/10.1016/j.proci.2018.05.139.
 
 [2] N. Ren, D. Zeng, K.V. Meredith, Y. Wang, S.B. Dorofeev, Modeling of flame extinction/re-ignition in oxygen-reduced environments, Proc Combust Inst 37 (2019) 3951-3958. doi: https://doi.org/10.1016/j.proci.2018.06.076.
