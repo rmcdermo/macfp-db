@@ -42,7 +42,7 @@ The derivation of soot volume fraction from either radiation probe data or LII d
 
 Figure 4: FM Burner flame images at various oxygen concentrations.
 
-### Combustion Efficiency
+### Combustion Efficiency (2017)
 
 The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (methane, propylene, propane, and ethylene) are reported in [9]. The theoretical heat release of all test conditions is maintained at 10 kW.  The flame was anchored by 36 pre-mixed ethylene/air pilot flames surrounding the burner. Each premixed flame was adjusted to be approximately 2.5 cm long. The total heat release rate of pilot flames is approximately 1 kW.
 
@@ -52,6 +52,10 @@ The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (me
 | propylene (C3H6)  | 11.2    |
 | propane (C3H8)    | 10.3    |
 | ethylene (C2H4)   | 8.2     |
+
+### Combustion Efficiency (2024)
+
+The combustion efficiency was revisited in [11] using a new electric heating coil method to anchor the flame.  Data for methane, propane, and ethylene are provided [here](https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Experimental_Data/FM_Burner_dataset_update_Oct2025/combustion_efficiency_data.csv).
 
 ### Velocity Field and Temperature Update (Oct 2025)
 
